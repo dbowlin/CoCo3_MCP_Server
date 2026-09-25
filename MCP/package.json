@@ -1,0 +1,23 @@
+{
+  "name": "coco3-mcp-bridge",
+  "version": "1.0.2",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "tsx --test test/config.test.ts test/mame-args.test.ts test/protocol.test.ts test/bridge-server.test.ts test/toolchain.test.ts test/process-manager.test.ts test/logger.test.ts test/tools.test.ts test/lua-bridge.test.ts test/source-rules.test.ts test/stdio-list.test.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  }
+}

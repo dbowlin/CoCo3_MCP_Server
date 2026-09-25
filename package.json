@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "postinstall": "npm install --prefix MCP",
+    "build": "npm run build --prefix MCP",
+    "start": "npm start --prefix MCP",
+    "test": "npm test --prefix MCP"
+  }
+}

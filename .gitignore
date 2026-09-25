@@ -1,0 +1,35 @@
+# coco3-mcp-bridge
+
+## Commit / ignore
+MCP/node_modules/
+MCP/dist/
+MCP/logs/
+MCP/snapshots/
+MCP/states/
+MCP/work/
+MCP/storage/disks/**
+!MCP/storage/disks/.gitkeep
+MCP/storage/host/**/*
+!MCP/storage/host/**/.gitkeep
+!MCP/storage/host/bas/hello.bas
+!MCP/storage/README.md
+MCP/.env
+MCP/scripts/bridge.port
+MCP/*.log
+*.log
+.claude/
+.cursor/
+mame/*
+!mame/README.md
+mame/roms/*
+!mame/roms/README.md
+toolshed/*
+!toolshed/README.md
+node_modules/
+.env
+
+# OS junk
+Thumbs.db
+Desktop.ini
+.DS_Store
+MCP/Documents/*.pdf
