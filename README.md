@@ -1,3 +1,5 @@
+=== See the [CHANGELOG.md](CHANGELOG.md) ===
+
 # CoCo 3 MCP Bridge
 
 An MCP server that runs a Color Computer 3 in MAME. An AI assistant can type BASIC, mount disks, take screenshots, and read or write memory.
