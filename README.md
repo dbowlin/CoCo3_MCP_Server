@@ -1,4 +1,5 @@
 === See the [CHANGELOG.md](CHANGELOG.md) ===
+=== There is also a [Python](https://github.com/dbowlin/CoCo3_MCP_Server_PYTHON) version ===
 
 # CoCo 3 MCP Bridge
 
