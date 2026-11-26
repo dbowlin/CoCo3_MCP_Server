@@ -26,7 +26,7 @@ test("server source never writes stdout with console.log", async () => {
   }
 });
 
-test("index.ts follows the SDK 1.30 stdio example", async () => {
+test("index.ts follows the MCP SDK stdio example", async () => {
   const index = await readFile(path.join(root, "src", "index.ts"), "utf8");
   assert.match(index, /@modelcontextprotocol\/sdk\/server\/mcp\.js/);
   assert.match(index, /@modelcontextprotocol\/sdk\/server\/stdio\.js/);
@@ -37,9 +37,9 @@ test("index.ts follows the SDK 1.30 stdio example", async () => {
   assert.doesNotMatch(index, /setRequestHandler/);
 });
 
-test("package.json pins @modelcontextprotocol/sdk 1.30.0 exactly", async () => {
+test("package.json pins @modelcontextprotocol/sdk 1.32.0 exactly", async () => {
   const pkg = JSON.parse(await readFile(path.join(root, "package.json"), "utf8")) as {
     dependencies: Record<string, string>;
   };
-  assert.equal(pkg.dependencies["@modelcontextprotocol/sdk"], "1.30.0");
+  assert.equal(pkg.dependencies["@modelcontextprotocol/sdk"], "1.32.0");
 });
